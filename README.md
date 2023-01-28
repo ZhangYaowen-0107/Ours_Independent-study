@@ -1,5 +1,5 @@
 # 利用人工智慧提升圖片解析度
-## ours_srgan 架構
+## ours_srgan 生成器架構
 ![image](image/G.jpg)
 ## Website
 ### 架構
