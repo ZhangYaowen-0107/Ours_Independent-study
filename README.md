@@ -31,13 +31,13 @@ ours_srgan/
 我們只有訓練 epoch = 400，因此你可選擇
 
 
-繼續訓練 : 執行 train.py&ensp;`# 注意: parser.add_argument('--m', type=str, default='re', help='train, re')`
+**繼續訓練** : 執行 train.py&ensp;`# 注意: parser.add_argument('--m', type=str, default='re', help='train, re')`
 
 
-重新訓練 : 執行 train.py&ensp;`# 注意: parser.add_argument('--m', type=str, default='train', help='train, re')`
+**重新訓練** : 執行 train.py&ensp;`# 注意: parser.add_argument('--m', type=str, default='train', help='train, re')`
 
 
-你也可以在 config.py的`config.TRAIN.n_epoch = 400`修改一次訓練的epoch
+你也可以在 config.py 的`config.TRAIN.n_epoch = 400`修改一次訓練的 epoch
 ## Website
 ### 程式碼
 Website 程式碼是以 Django 作為網頁開發框架進行編寫
