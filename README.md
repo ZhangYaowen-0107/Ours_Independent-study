@@ -28,6 +28,9 @@ ours_srgan/
 `!pip install tensorlayerx`
 
 
+我們只有訓練 epoch = 400，因此你可選擇
+
+
 繼續訓練 : 執行 train.py&ensp;# 注意: parser.add_argument('--m', type=str, default='re', help='train, re')
 
 
