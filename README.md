@@ -1,7 +1,7 @@
 # 利用人工智慧提升圖片解析度
 ## ours_srgan
 ### 程式碼
-程式碼是參照<https://github.com/tensorlayer/srgan>，主要修改的只有生成器架構
+程式碼是參照 <https://github.com/tensorlayer/srgan>，主要修改的只有生成器架構
 ### ours_srgan 生成器架構
 ![image](image/G.jpg)
 ### outs_srgan 目錄結構
@@ -28,10 +28,10 @@ ours_srgan/
 `!pip install tensorlayerx`
 
 
-繼續訓練 : 執行 train.py # 注意: parser.add_argument('--m', type=str, default='re', help='train, re')
+繼續訓練 : 執行 train.py  # 注意: parser.add_argument('--m', type=str, default='re', help='train, re')
 
 
-重新訓練 : 執行 train.py # 注意: parser.add_argument('--m', type=str, default='train', help='train, re')
+重新訓練 : 執行 train.py  # 注意: parser.add_argument('--m', type=str, default='train', help='train, re')
 ## Website
 ### 程式碼
 Website 程式碼是以 Django 作為網頁開發框架進行編寫
