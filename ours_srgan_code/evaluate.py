@@ -13,9 +13,9 @@ from ours_srgan import SRGAN_g
 
 # create folders to save result images and trained models
 batch_size = 4
-save_dir = "./media/output/"
+save_dir = "output"
 tlx.files.exists_or_mkdir(save_dir)
-checkpoint_dir = "./sr_image/SRGAN/models/"
+checkpoint_dir = "models"
 tlx.files.exists_or_mkdir(checkpoint_dir)
 
 G = SRGAN_g()
@@ -47,9 +47,9 @@ def evaluate(img_path):
 if __name__ == '__main__':
     import argparse
 
-    save_dir = "./output/"
+    save_dir = "output"
     tlx.files.exists_or_mkdir(save_dir)
-    checkpoint_dir = "./models/"
+    checkpoint_dir = "models"
     tlx.files.exists_or_mkdir(checkpoint_dir)
 
     parser = argparse.ArgumentParser()
