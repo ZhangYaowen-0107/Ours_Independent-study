@@ -103,7 +103,7 @@ website/
 
 `pip install Django`
 
-之後只要在 Django project 路徑下輸入以下指令即可運作往 Django
+之後只要在 Django project 路徑下輸入以下指令即可運作 Django
 
 
 `python manage.py runserver`
