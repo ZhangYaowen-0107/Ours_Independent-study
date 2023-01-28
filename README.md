@@ -1,2 +1,2 @@
-# Ours_Independent-study
+# 利用人工智慧提升圖片解析度
 大學專題
