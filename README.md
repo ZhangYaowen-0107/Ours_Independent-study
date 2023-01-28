@@ -9,7 +9,7 @@ ours_srgan/
     ├─── ours_srgan.py
     ├─── train.py
     └── models
-          ├─── d.npz
+          ├─── d.npz # 需要將 d.part1 ~ d.part7 的rar檔解壓縮且合併
           ├─── g.npz
           └─── vgg19.npy
     └── DIV2K
