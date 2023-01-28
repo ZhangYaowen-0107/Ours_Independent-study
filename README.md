@@ -1,4 +1,6 @@
 # 利用人工智慧提升圖片解析度
+## 程式碼
+程式碼主要參照<https://github.com/tensorlayer/srgan>，主要修改的只有 generator 架構
 ## ours_srgan 生成器架構
 ![image](image/G.jpg)
 ### outs_srgan 目錄結構
@@ -16,6 +18,8 @@ ours_srgan/
           └── DIV2K_train_HR
 ```
 ## Website
+## 程式碼
+Website 程式碼是以 Django 作為網頁開發框架進行編寫
 ### 架構
 <div align="center">
 <img src="https://github.com/ZhangYaowen-0107/Ours_Independent-study/blob/main/image/%E7%B6%B2%E9%A0%81%E6%9E%B6%E6%A7%8B%E5%9C%96.png" width="70%"/>
