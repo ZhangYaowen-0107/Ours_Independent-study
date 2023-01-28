@@ -20,7 +20,7 @@ ours_srgan/
 ```
 ### 執行
 #### 生成圖片
-執行 evaluate.py # 注意: parser.add_argument('--img', type=str, default='測試圖片路徑')
+執行 evaluate.py	# 注意: parser.add_argument('--img', type=str, default='測試圖片路徑')
 #### 訓練
 訓練前先需安裝 tensorlayerx
 
@@ -28,10 +28,10 @@ ours_srgan/
 `!pip install tensorlayerx`
 
 
-繼續訓練 : 執行 train.py  # 注意: parser.add_argument('--m', type=str, default='re', help='train, re')
+繼續訓練 : 執行 train.py	# 注意: parser.add_argument('--m', type=str, default='re', help='train, re')
 
 
-重新訓練 : 執行 train.py  # 注意: parser.add_argument('--m', type=str, default='train', help='train, re')
+重新訓練 : 執行 train.py 	# 注意: parser.add_argument('--m', type=str, default='train', help='train, re')
 ## Website
 ### 程式碼
 Website 程式碼是以 Django 作為網頁開發框架進行編寫
