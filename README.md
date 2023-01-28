@@ -7,7 +7,7 @@
 
 ### 目錄結構
 ![image](image/django_文件夾結構.png)
-website/
+```website/
     └── media
           ├── image
           └── output
@@ -48,4 +48,4 @@ website/
           ├── base.html
           └── ref.html
     └── db.sqlite3
-    └── manage.py
+    └── manage.py```
