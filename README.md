@@ -97,6 +97,8 @@ website/
 
 `pip install Django`
 
+之後只要在 Django project 路徑下輸入`python manage.py runserver`
+
 
 我們在編寫時，所採用的版本為 4.0.6，因此你也可以指定安裝版本
 
