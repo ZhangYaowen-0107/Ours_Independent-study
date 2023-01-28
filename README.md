@@ -20,7 +20,10 @@ ours_srgan/
 ```
 ### 執行
 #### 生成圖片
-執行 evaluate.py&ensp;`# 注意: parser.add_argument('--img', type=str, default='測試圖片路徑')`
+執行 evaluate.py
+
+
+`# 注意: parser.add_argument('--img', type=str, default='測試圖片路徑')`
 #### 訓練
 訓練前先需安裝 tensorlayerx
 
