@@ -23,8 +23,14 @@ ours_srgan/
 執行 evaluate.py # 注意: parser.add_argument('--img', type=str, default='測試圖片路徑')
 #### 訓練
 訓練前先需安裝 tensorlayerx
+
+
 `!pip install tensorlayerx`
+
+
 繼續訓練 : 執行 train.py # 注意: parser.add_argument('--m', type=str, default='re', help='train, re')
+
+
 重新訓練 : 執行 train.py # 注意: parser.add_argument('--m', type=str, default='train', help='train, re')
 ## Website
 ### 程式碼
@@ -81,6 +87,12 @@ website/
  ```
 ### 執行
 執行前須先安裝 Django
+
+
 `pip install Django`
+
+
 我們在編寫時，所採用的版本為 4.0.6，因此你也可以指定安裝版本
+
+
 `pip install Django==4.0.6`
