@@ -25,7 +25,7 @@ ours_srgan/
 訓練前先需安裝 tensorlayerx
 
 
-`!pip install tensorlayerx`
+`pip install tensorlayerx`
 
 
 我們只有訓練 epoch = 400，因此你可選擇
