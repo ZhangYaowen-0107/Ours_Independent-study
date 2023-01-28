@@ -1,5 +1,5 @@
 # 利用人工智慧提升圖片解析度
-## 
+## ours_srgan
 ### 程式碼
 程式碼是參照<https://github.com/tensorlayer/srgan>，主要修改的只有 generator 架構
 ### ours_srgan 生成器架構
