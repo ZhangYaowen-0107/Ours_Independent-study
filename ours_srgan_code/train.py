@@ -21,8 +21,6 @@ batch_size = 4
 n_epoch_init = config.TRAIN.n_epoch_init
 n_epoch = config.TRAIN.n_epoch
 
-save_dir = "samples"
-tlx.files.exists_or_mkdir(save_dir)
 checkpoint_dir = "models"
 tlx.files.exists_or_mkdir(checkpoint_dir)
 
@@ -184,8 +182,8 @@ def train():
         g_lr_v.step()
         d_lr_v.step()
         
-        G.save_weights(os.path.join(checkpoint_dir, 'g_new400.npz'), format='npz_dict')
-        D.save_weights(os.path.join(checkpoint_dir, 'd_new400.npz'), format='npz_dict')
+        G.save_weights(os.path.join(checkpoint_dir, 'g.npz'), format='npz_dict')
+        D.save_weights(os.path.join(checkpoint_dir, 'd.npz'), format='npz_dict')
         f.write("[Train]epoch{}, StartTime: {}, EndTime: {}, Total: {:.3f}s\n\n".format(epoch, time.ctime(timeStart), time.ctime(), time.time() - timeStart))
     f.write("[Train] End, StartTime: {}, EndTime: {}, Total: {:.3f}s\n\n".format(time.ctime(start), time.ctime(), time.time() - start))
 
@@ -194,7 +192,7 @@ if __name__ == '__main__':
     import argparse
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--m', type=str, default='re', help='train, re')
+    parser.add_argument('--m', type=str, default='train', help='train, re')
 
     args = parser.parse_args()
     tlx.global_flag['mode'] = args.m
