@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <title>利用人工智慧提升圖片解析度</title>
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="header">
+      <video autoplay loop class="back-video" muted plays-inline>
+        <source src="../static/images/Tunnel.mp4" type="video/mp4">
+      </video>
+
+      <nav>
+        <img src="../static/images/logo.png" class="logo">
+        <ul class="nav-links">
+          <li><a href="http://127.0.0.1:8000">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/increase_resolution">提升解析度</a></li>
+          <li><a href="http://127.0.0.1:8000/reference">參考文獻</a></li>
+        </ul>
+      </nav>
+      <div class="content" style="text-align: left; font-weight:bold;">
+          <h2>研究背景</h2><br>
+          <p>
+            現今的設備已經能提供相當高的解析度，能夠拍出非常清晰的照片，但難免會因各種因素而造成解析度不夠高，
+            如拍攝光線不足、拍攝距離過近或過遠……等，且並不是任何人都擁有較好的設備，因此這時候就需藉由軟體來對相片提升解析度。<br>
+            提升解析度之軟體雖然已有許多種類，但仍沒有代表性的軟體，再加上人工智慧為現今趨勢，因此本組有了藉以人工智慧的方式來提升相片解析度的想法。
+          </p><br>
+          <h2>專題目的</h2><br>
+          <p>
+            本專題藉由SRGAN模型來實作提升圖像解析度的神經網路，並參考ESRGAN論文提及的去除BN層和殘差塊的結構變化、GoogLeNet為增加網路寬度而使用到的Inception模塊，主要目的如下:<br>
+            1.	觀察減少BN層的使用是否對模型的表現有所提升。<br>
+            2.	嘗試增加神經網路的深度，並透過殘差塊結構的變化來穩定訓練。<br>
+            3.	利用Inception模塊的概念萃取不同尺寸的特徵是否有助於圖像細節還原。<br>
+          </p>
+      </div>
+      <div class="footer">
+        <p>指導教授 : 葉慶隆 / 副教授 &ensp; 團隊: I4B / 黃仰辰、林峰正、張耀文</p>
+        <table>
+        <td><a href="https://github.com/ZhangYaowen-0107/Ours_Independent-study"><img src="../static/images/github.png" class="github-logo"></a></td>
+        <td><p>&ensp;: 程式碼</p></td>
+        </table>
+      </div>
+  </body>
+</html>

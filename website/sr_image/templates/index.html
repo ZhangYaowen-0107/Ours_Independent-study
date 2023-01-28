@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <title>利用人工智慧提升圖片解析度</title>
+    <link href="../../static/css/style.css" rel="stylesheet" type="text/css">
+    <link href="../../static/css/slideshow.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="header">
+      <video autoplay loop class="back-video" muted plays-inline>
+        <source src="../../static/images/Tunnel.mp4" type="video/mp4">
+      </video>
+
+      <nav>
+        <img src="../../static/images/logo.png" class="logo">
+        <ul class="nav-links">
+          <li><a href="http://127.0.0.1:8000">Home</a></li>
+          <li><a href="http://127.0.0.1:8000/increase_resolution">提升解析度</a></li>
+          <li><a href="http://127.0.0.1:8000/reference">參考文獻</a></li>
+        </ul>
+      </nav>
+      <div class="content" style="text-align: center;">
+        {% if view == False %}
+          <h1>提升解析度</h1><br>
+          <h3>選擇圖檔後即可上傳，上傳的圖檔會放大4倍並提升解析度</h3>
+          <form action="." method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{form}}
+            {% if after %}
+            <a href= "{{ after }}"download= "{{ after }}" class="btn" style="padding: 7.5px 25px;">下載</a>
+            <button type="submit" name="button" class="btn" value="reupload">重新上傳</button>
+            <button type="submit" name="button" class="btn" value="view_img">預覽圖片</button>
+            {% else %}
+            <button type="submit" class="btn">上傳</button>
+            {% if resource == True %}
+            <br><br>ResourceExhaustedError!! 請上傳大小較小的圖片
+            {% endif %}
+            {% endif %}
+        </form>
+        {% else %}
+          <div class="container">
+            <div class="mySlides">
+            <h3>Bicubic</h3>
+            <img src="../../media/output/hr_cubic.png" style="max-height: 400px; min-height: 400px; width: auto;">
+            </div>
+        
+            <div class="mySlides">
+            <h3>OURS_SRGAN</h3>
+            <img src="../../media/output/img.png" style="max-height: 400px; min-height: 400px; width: auto;">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          </div>
+    
+          <script src="../../static/js/slideshow.js"></script>
+          <button class="btn" onclick="history.back()">取消預覽</button>
+        {% endif %}
+      </div>
+      <div class="footer">
+        <p>指導教授 : 葉慶隆 / 副教授 &ensp; 團隊: I4B / 黃仰辰、林峰正、張耀文</p>
+        <table>
+        <td><a href="https://github.com/ZhangYaowen-0107/Ours_Independent-study"><img src="../../static/images/github.png" class="github-logo"></a></td>
+        <td><p>&ensp;: 程式碼</p></td>
+        </table>
+      </div>
+  </body>
+</html>
