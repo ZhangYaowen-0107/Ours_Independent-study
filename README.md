@@ -31,10 +31,16 @@ ours_srgan/
 我們只有訓練 epoch = 400，因此你可選擇
 
 
-**繼續訓練** : 執行 train.py&ensp;`# 注意: parser.add_argument('--m', type=str, default='re', help='train, re')`
+**繼續訓練** : 執行 train.py
 
 
-**重新訓練** : 執行 train.py&ensp;`# 注意: parser.add_argument('--m', type=str, default='train', help='train, re')`
+`# 注意: parser.add_argument('--m', type=str, default='re', help='train, re')`
+
+
+**重新訓練** : 執行 train.py
+
+
+`# 注意: parser.add_argument('--m', type=str, default='train', help='train, re')`
 
 
 你也可以在 config.py 的`config.TRAIN.n_epoch = 400`修改一次訓練的 epoch
