@@ -1,6 +1,20 @@
 # 利用人工智慧提升圖片解析度
 ## ours_srgan 生成器架構
 ![image](image/G.jpg)
+### outs_srgan 目錄結構
+```
+ours_srgan/
+    ├─── config.py
+    ├─── evaluate.py
+    ├─── ours_srgan.py
+    ├─── train.py
+    └── models
+          ├─── d.npz
+          ├─── g.npz
+          └─── vgg19.npy
+    └── DIV2K
+          └── DIV2K_train_HR
+```
 ## Website
 ### 架構
 <div align="center">
