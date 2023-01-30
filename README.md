@@ -86,18 +86,18 @@ website/
           └── wsgi.py
     └── static
           └── css
-          	└── slideshow.css
+          	├── slideshow.css
           	└── style.css
           └── imgaes
-          	└── github.png
-          	└── logo.png
+          	├── github.png
+          	├── logo.png
           	└── Tunnel.mp4
           └── js
           	└── slideshow.js
     └── templates
           ├── base.html
           └── ref.html
-    └── db.sqlite3
+    ├── db.sqlite3
     └── manage.py
  ```
 ### 執行
