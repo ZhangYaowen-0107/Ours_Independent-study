@@ -17,7 +17,7 @@ gpus = tf.config.experimental.list_physical_devices('GPU')
 for gpu in gpus: 
     tf.config.experimental.set_memory_growth(gpu, True)
 ###====================== HYPER-PARAMETERS ===========================###
-batch_size = 4
+batch_size = 4 # 8
 n_epoch_init = config.TRAIN.n_epoch_init
 n_epoch = config.TRAIN.n_epoch
 
