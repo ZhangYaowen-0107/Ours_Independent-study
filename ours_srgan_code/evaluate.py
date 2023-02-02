@@ -12,7 +12,7 @@ import tensorlayerx as tlx
 from ours_srgan import SRGAN_g
 
 # create folders to save result images and trained models
-batch_size = 4
+batch_size = 4 # 8
 save_dir = "output"
 tlx.files.exists_or_mkdir(save_dir)
 checkpoint_dir = "models"
