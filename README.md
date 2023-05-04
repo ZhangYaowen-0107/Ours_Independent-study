@@ -3,7 +3,7 @@
 ### 程式碼
 程式碼是參照&ensp;<https://github.com/tensorlayer/srgan>，主要修改的只有生成器架構
 ### ours_srgan 生成器架構
-![image](image/G.jpg)
+![image](image/G_full.jpg)
 ### outs_srgan 目錄結構
 ```
 ours_srgan/
