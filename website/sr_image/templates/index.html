@@ -5,15 +5,15 @@
     <link href="../../static/css/style.css" rel="stylesheet" type="text/css">
     <link href="../../static/css/slideshow.css" rel="stylesheet" type="text/css">
   </head>
-  <body>
+  <body background="../../static/images/background.jpg">
     <div class="header">
-      <video autoplay loop class="back-video" muted plays-inline>
+      <!--<video autoplay loop class="back-video" muted plays-inline>
         <source src="../../static/images/Tunnel.mp4" type="video/mp4">
-      </video>
+      </video>-->
 
       <nav>
-        <img src="../../static/images/logo.png" class="logo">
-        <ul class="nav-links">
+        <p style="font-weight:bold; font-size: 30px;">利用人工智慧提升解析度</p>
+        <ul class="nav-links" style="font-weight:bold; font-size:18px">
           <li><a href="http://127.0.0.1:8000">Home</a></li>
           <li><a href="http://127.0.0.1:8000/increase_resolution">提升解析度</a></li>
           <li><a href="http://127.0.0.1:8000/reference">參考文獻</a></li>
@@ -22,7 +22,7 @@
       <div class="content" style="text-align: center;">
         {% if view == False %}
           <h1>提升解析度</h1><br>
-          <h3>選擇圖檔後即可上傳，上傳的圖檔會放大4倍並提升解析度</h3>
+          <h3>選擇圖檔後即可上傳，上傳的圖檔會放大4倍並提升解析度</h3><br>
           <form action="." method="POST" enctype="multipart/form-data">
             {% csrf_token %}
             {{form}}
@@ -40,12 +40,12 @@
         {% else %}
           <div class="container">
             <div class="mySlides">
-            <h3>Bicubic</h3>
+            <h3>Bicubic</h3><br>
             <img src="../../media/output/hr_cubic.png" style="max-height: 400px; min-height: 400px; width: auto;">
             </div>
         
             <div class="mySlides">
-            <h3>OURS_SRGAN</h3>
+            <h3>OURS_SRGAN</h3><br>
             <img src="../../media/output/img.png" style="max-height: 400px; min-height: 400px; width: auto;">
             </div>
             
@@ -57,11 +57,11 @@
           <button class="btn" onclick="history.back()">取消預覽</button>
         {% endif %}
       </div>
-      <div class="footer">
+      <div class="footer" style="font-weight:bold; font-size:18px">
         <p>指導教授 : 葉慶隆 / 副教授 &ensp; 團隊: I4B / 黃仰辰、林峰正、張耀文</p>
         <table>
         <td><a href="https://github.com/ZhangYaowen-0107/Ours_Independent-study"><img src="../../static/images/github.png" class="github-logo"></a></td>
-        <td><p>&ensp;: 程式碼</p></td>
+        <td><p>&ensp;⇚  程式碼</p></td>
         </table>
       </div>
   </body>

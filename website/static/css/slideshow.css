@@ -14,7 +14,7 @@
     width: auto;
     padding: 15px;
     margin-top: -50px;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
     font-size: 20px;
     border-radius: 10px 10px 10px 10px;
@@ -31,7 +31,7 @@
   
   .prev:hover,
   .next:hover {
-    background-color: rgba(223, 121, 216, 0.8);
+    background-color: #d17a58;
   }
 
   
